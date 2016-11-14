@@ -1,5 +1,5 @@
-var application_key = "d4c65ea8581688b1e303d14db32005447d38e8864a764794b99d29613e269dca";
-var client_key = "8915ea8e1d4f7fe24228df8b84e34e0b4d6ccea3b9513423d54f0b86379bc8a0";
+var application_key = "APPLICATION_KEY";
+var client_key = "CLIENT_KEY";
 var ncmb = new NCMB(application_key, client_key);
 
 // ユーザが指定したロールに所属しているかチェックします
@@ -146,6 +146,6 @@ $(function() {
     $(".page").addClass('hide');
     $(".createManager").removeClass('hide');
   })
-  
+    
   checkRole();
 });
