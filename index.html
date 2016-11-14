@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="/bower_components/ncmb/ncmb.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="container">
+    <div id="alert" class="alert hide"></div>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="row">
+          <div class="col-md-3">
+            <h2>メニュー</h2>
+            <ul class="nav nav-pills nav-stacked">
+              <li class="login-required admin-required">
+                <a href="#" id="createManager">アカウント作成</a>
+              </li>
+              <li class="no-login">
+                <a href="#" id="login">ログイン</a>
+              </li>
+              <li class="login-required">
+                <a href="#" id="logout">ログアウト</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9">
+            <div class="login hide page">
+              <h2>ログイン</h2>
+              <form id="loginForm">
+                <div class="form-group">
+                  <label for="inputUserName">ユーザID</label>
+                  <input type="text" class="form-control" name="userName" placeholder="ユーザ名">
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword">パスワード</label>
+                  <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-default">ログインする</button>
+              </form>
+            </div>
+            
+            <div class="createManager hide page">
+              <h2>新規アカウント作成</h2>
+              <form id="createManagerForm">
+                <div class="form-group">
+                  <label for="inputUserName">ユーザID</label>
+                  <input type="text" class="form-control" name="userName" placeholder="ユーザ名">
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword">パスワード</label>
+                  <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-default">アカウントを作成する</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
